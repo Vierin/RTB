@@ -1,10 +1,10 @@
 function countToWeekEnd() {
     const counter = document.querySelector(".js-counter");
     const currentTime = new Date();
+    let weekEnd;
+    const dateFromLocalStorage = localStorage.getItem("currentTime");
 
-    let weekEnd = new Date(localStorage.getItem("weekEnd"));
-
-    if (!weekEnd || isNaN(weekEnd)) {
+    if (!dateFromLocalStorage) {
         weekEnd = new Date(
             currentTime.getFullYear(),
             currentTime.getMonth(),
@@ -14,6 +14,8 @@ function countToWeekEnd() {
             59
         );
         localStorage.setItem("weekEnd", weekEnd);
+    } else {
+        weekEnd = new Date(dateFromLocalStorage);
     }
 
     const difference = weekEnd.getTime() - currentTime.getTime();

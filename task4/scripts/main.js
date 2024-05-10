@@ -82,7 +82,7 @@ class Banner {
     }
 
     animateSlidesIn(id) {
-        const timeIn = 12;
+        const timeIn = 6.5;
         const slide = this.slides[id];
         const textBg = slide.querySelectorAll(".js-slide-text");
         const text = slide.querySelectorAll(".js-slide-text span");
