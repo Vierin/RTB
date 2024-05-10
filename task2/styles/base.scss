@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+
+    --color-border: #ddd;
+    --color-white: #fff;
+    --color-gray-dark: #808080;
+    --color-gray-dark-2: #646464;
+    --color-orange: #ee4036;
+
+    --banner-width: 160px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

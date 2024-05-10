@@ -1,0 +1,40 @@
+.countdown {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+
+    &__background {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    }
+
+    &__counter {
+        font-size: 20px;
+        color: var(--color-white);
+        text-align: center;
+
+        > span {
+            margin-top: 10px;
+            display: block;
+            font-size: 45px;
+        }
+
+        span[data-text] {
+            position: relative;
+            display: inline-block;
+            min-width: 60px;
+
+            &::after {
+                content: attr(data-text);
+                position: absolute;
+                inset: 92% 0 auto 0;
+                color: var(--color-white);
+                font-size: 14px;
+            }
+        }
+    }
+}

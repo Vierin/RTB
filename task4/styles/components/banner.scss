@@ -1,0 +1,30 @@
+.banner {
+    position: relative;
+    margin: 20px;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    color: var(--color-black);
+    border: 1px solid var(--color-white);
+
+    &__logo {
+        position: absolute;
+        left: var(--offset-x);
+        transform: translateX(-150%);
+        z-index: 6;
+        max-width: 132px;
+        padding: 16px 18px 7px 16px;
+        background: var(--color-yellow);
+    }
+
+    &__btn {
+        position: absolute;
+        z-index: 4;
+        right: 3px;
+        top: 3px;
+        width: 8px;
+        height: 6px;
+        border-top: 2px solid var(--color-white);
+        border-bottom: 2px solid var(--color-white);
+    }
+}

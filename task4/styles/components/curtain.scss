@@ -1,0 +1,12 @@
+.curtain {
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 200%;
+    z-index: 6;
+    pointer-events: none;
+    background: linear-gradient(
+        0deg,
+        var(--color-yellow) 50%,
+        var(--color-white) 50%
+    );
+}

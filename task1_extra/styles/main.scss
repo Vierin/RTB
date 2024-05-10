@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap");
+
+:root {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+
+    --color-border: #ddd;
+    --color-gray-dark: #808080;
+    --color-orange: #ee4036;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@import "components/banner";
+@import "components/banner-item";
